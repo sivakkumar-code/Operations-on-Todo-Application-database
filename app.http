@@ -1,0 +1,85 @@
+###
+GET http://localhost:3000/todos/10/
+Content-Type: application/json
+###
+GET http://localhost:3000/todos/?status=TO%20DO
+Content-Type: application/json
+
+###
+GET http://localhost:3000/todos/?priority=HIGH
+Content-Type: application/json
+
+###
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+Content-Type: application/json
+
+###
+GET http://localhost:3000/todos/?search_q=Play
+Content-Type: application/json
+###
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 9,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 11,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 16,
+  "todo": "Finalize event theme",
+  "priority": "HIGH",
+  "status": "TO DO"
+}
+###
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 18,
+  "todo": "Finalize event theme",
+  "priority": "HIGH",
+  "status": "IN PROGRESS"
+}
+###
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 20,
+  "todo": "Finalize event Play theme",
+  "priority": "HIGH",
+  "status": "IN PROGRESS"
+}
+###
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 28,
+  "todo": " event Play theme",
+  "priority": "HIGH",
+  "status": "IN PROGRESS"
+}
+###
+PUT  http://localhost:3000/todos/11/
+Content-Type: application/json
+
+{
+  "priority": "HIGH"
+}
